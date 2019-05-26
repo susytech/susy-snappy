@@ -1,0 +1,20 @@
+[package]
+name = "susy-snappy-sys"
+version = "0.1.2"
+authors = ["Susytech <admin@superstring.ch>", "Paritytech <admin@parity.io>"]
+license = "GPL-3.0"
+repository = "https://github.com/susytech/susy-snappy.git"
+description = "Native bindings to libsnappy"
+keywords = ["ffi", "snappy"]
+
+build = "build.rs"
+links = "snappy"
+
+[features]
+default = []
+
+[dependencies]
+libc = "0.2"
+
+[build-dependencies]
+cmake = "0.1"

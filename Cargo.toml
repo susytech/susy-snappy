@@ -1,0 +1,15 @@
+[package]
+name = "susy-snappy"
+version = "0.1.0"
+authors = ["Susytech <admin@superstring.ch>", "Paritytech <admin@parity.io>"]
+license = "GPL-3.0"
+repository = "https://github.com/susytech/susy-snappy.git"
+description = "Rust bindings for the snappy compression library"
+keywords = ["snappy"]
+
+[dependencies]
+libc = "0.2"
+susy-snappy-sys = { path = "snappy-sys", version = "0.1" }
+
+[dev-dependencies]
+rand = "0.5"
